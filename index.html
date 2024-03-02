@@ -53,9 +53,6 @@
       #listtextcolor {
         color: green;
       }
-      li {
-        padding-bottom: 15px;
-      }
       table, tr,th, td{
         border: 1px solid rgb(203, 158, 75);
         border-collapse: collapse;
@@ -77,7 +74,24 @@
       #career, #ul-summary, #role,#project-details,#project-description,#copyright{
         font-family: "Poppins", sans-serif;
       }
-     
+      #ul-summary li{
+        list-style-type: none;
+        padding-bottom: 15px;
+
+      }
+      .liclass{
+        padding-left: 10px;
+      }
+      #ul-summary li::marker{
+       content: "👉";
+      }
+     .role-resp li{
+      list-style-type: lower-alpha;
+      padding-bottom: 15px;
+     }
+     #project-description::selection{
+      background-color: rgb(197, 136, 24);
+     }
     </style>
   </head>
 
@@ -120,30 +134,30 @@
         <h2 class="heading">Professional Summary</h2>
         <ul id="ul-summary">
         <li>
-          <span id="listtextcolor"
+          <span id="listtextcolor" class="liclass"
             >Having 1 years of experience in developing Single page Web
             Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript,
             TypeScript</span
           >
         </li>
         <li>
-          <span id="listbgcolor">
+          <span id="listbgcolor"  class="liclass">
             Experience on working with version control system - GIT and
             GitHub</span
           >
         </li>
-        <li>Experience working with JIRA for user stories and bug tracking</li>
-        <li>
+        <li  class="liclass">Experience working with JIRA for user stories and bug tracking</li>
+        <li  class="liclass">
           Strong Debugging & Troubleshooting code experience using Chrome
           Developer Tool
         </li>
-        <li>Working exposure on ID's like VS Code and Notepad++</li>
-        <li>Good working experience under Agile methodologies environment</li>
-        <li>
+        <li  class="liclass">Working exposure on ID's like VS Code and Notepad++</li>
+        <li  class="liclass">Good working experience under Agile methodologies environment</li>
+        <li  class="liclass">
           Experience in using Chrome Developer Tool for debugging and
           Troubleshooting the code
         </li>
-        <li>Knowledge of NodeJS</li>
+        <li  class="liclass">Knowledge of NodeJS</li>
         <li>Ability to work with people at all levels in the program</li>
       </ul>
       </section>
@@ -208,7 +222,7 @@
         </p>
         <hr />
         <p><strong>Role and Responsibilities</strong></p>
-        <ul id="role">
+        <ol id="role" class="role-resp">
           <li>
             Designed and Implemented the user interface using HTML5 and CSS3
           </li>
@@ -221,7 +235,7 @@
             stand up call,sprint retrospective meetings
           </li>
           <li>involved in fixing technical issue in production environment</li>
-        </ul>
+        </ol>
       </section>
       <hr />
       <!--Education Section -->

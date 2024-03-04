@@ -1,0 +1,100 @@
+/* Google font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Universal Selector */
+* {
+ 
+  margin: 0px;
+}
+/* main section */
+#mainsection {
+  background-color: rgb(0, 81, 124);
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+/* section text */
+#sectiontext {
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 600px;
+  margin-top: 50px;
+  background: white;
+  margin-left: 500px;
+  padding-right: 3px;
+  font-family: "Poppins", sans-serif;
+}
+#mainsection #sectiontext {
+  box-sizing: border-box;
+  border: 1px solid;
+  padding-left: 15px;
+}
+/* img section */
+#imgsection {
+  display: inline-block;
+}
+#imgsection img {
+  width: 135px;
+  height: 150px;
+}
+/* content section */
+#contentsection {
+  display: inline-block;
+  margin-bottom: 15px
+}
+#contentsection h2{
+    font-family: "Roboto", sans-serif;
+}
+
+/* main stock */
+#mainstock {
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 600px;
+  margin-top: 10px;
+  background: #efefef;
+  margin-left: 500px;
+  padding-right: 3px;
+  margin-bottom: 30px;
+}
+/* section stock */
+#sectionstock {
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 550px;
+  margin-top: 25px;
+  background: rgb(49, 53, 62);
+  margin-left: 15px;
+  padding-right: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#ulcontent li::marker {
+  content: "👉";
+}
+.licontent {
+  padding-left: 2px;
+}
+/* stock heading */
+#stockheading h2 {
+  color: #45d4fb;
+  padding-left: 20px;
+  padding-top: 40px;
+  width: 102px;
+  font-family: "Roboto", sans-serif;
+}
+/* stock text */
+
+#stocktext {
+  display: inline-block;
+  width: 250px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+}
+#stockimg {
+  display: inline-block;
+}
+#stockimg img {
+  width: 50px;
+  height: 50px;
+}

@@ -10,89 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Google Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon" />
-    <style>
-      header {
-        padding: 20px;
-        background-color: rgb(216, 244, 245);
-      }
-      .heading {
-        background-color: lightgrey;
-        color: black;
-        font-weight: bold;
-        font-family: "Roboto", sans-serif;
-      }
-      .navBar {
-        text-decoration: none;
-        margin-right: 10px;
-        font-family: "Roboto", sans-serif;
-      }
-      .navheader {
-        padding-top: 10px;
-      }
-      #resume {
-        color: orange;
-        font-weight: bolder;
-      }
-      #resume_text {
-        margin-left: 10px;
-      }
-      .heade-info {
-        color: yellowgreen;
-        font-weight: bolder;
-        font-family: "Poppins", sans-serif;
-        margin-right: 30px;
-        margin-left: 10px;
-      }
-      #listbgcolor {
-        background-color: red;
-      }
-      #listtextcolor {
-        color: green;
-      }
-      table, tr,th, td{
-        border: 1px solid rgb(203, 158, 75);
-        border-collapse: collapse;
-        padding: 15px;
-      }
-      th,td{
-        padding: 10px;
-        font-family: "Poppins", sans-serif;
-      }
-      .footer-icon {
-        margin-right: 10px;
-      }
-      .text-space{
-        margin-left: 5px;
-      }
-      #tech-stack{
-        width: 50%;
-      }
-      #career, #ul-summary, #role,#project-details,#project-description,#copyright{
-        font-family: "Poppins", sans-serif;
-      }
-      #ul-summary li{
-        list-style-type: none;
-        padding-bottom: 15px;
-
-      }
-      .liclass{
-        padding-left: 10px;
-      }
-      #ul-summary li::marker{
-       content: "👉";
-      }
-     .role-resp li{
-      list-style-type: lower-alpha;
-      padding-bottom: 15px;
-     }
-     #project-description::selection{
-      background-color: rgb(197, 136, 24);
-     }
-    </style>
+    <link rel="stylesheet" href="style.css"> 
   </head>
 
   <body>
@@ -104,25 +23,23 @@
       <span class="heade-info">9423 8096 98 </span>
       <i class="fa fa-envelope" aria-hidden="true"></i>
       <span class="heade-info">bhangale.vishnu7@gmail.com</span>
-      <a href="assets/resume.pdf" download id="resume">
-        <i class="fa fa-download" aria-hidden="true"></i>
-        <span id="resume_text">RESUME</span>
+      <a href="assets/resume.pdf" download id="resume"><i class="fa fa-download" aria-hidden="true"></i><span id="resume_text">RESUME</span>
       </a>
     </header>
     <!-- Navigation Section -->
-    <nav class="navheader">
-      <a class="navBar" href="#home">HOME</a>
-      <a class="navBar" href="#techStack">TECH STACK</a>
-      <a class="navBar" href="#projects">PROJECT</a>
-      <a class="navBar" href="#education">EDUCATION</a>
-      <a class="navBar" href="personalDetails.html" target="_blank"
-        >PERSONAL DETAILS</a
-      >
-      <a class="navBar" href="others.html" target="_blank">OTHERS</a>
-      <a class="navBar" href="contactMe.html" target="_blank">CONTACTME</a>
+    <nav id="navSection">
+      <ul>
+        <li><a href="#home">HOME</a> </li>
+        <li><a href="#techStack">TECH STACK</a> </li>
+        <li><a href="#project">PROJECTS</a> </li>    
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+        <li> <a href="others.html" target="_blank">OTHERS</a></li>
+        <a class="navBar" href="contactMe.html" target="_blank">CONTACTME</a>
+      </ul>
     </nav>
     <!-- Main Section -->
-    <section>
+    <section id="container">
       <!-- Career Objectives -->
       <h2 class="heading">Career Objectives</h2>
       <p id="career">
@@ -141,24 +58,24 @@
           >
         </li>
         <li>
-          <span id="listbgcolor"  class="liclass">
+          <span id="listbgcolor"  class="lisummary">
             Experience on working with version control system - GIT and
             GitHub</span
           >
         </li>
-        <li  class="liclass">Experience working with JIRA for user stories and bug tracking</li>
-        <li  class="liclass">
+        <li  class="lisummary">Experience working with JIRA for user stories and bug tracking</li>
+        <li  class="lisummary">
           Strong Debugging & Troubleshooting code experience using Chrome
           Developer Tool
         </li>
-        <li  class="liclass">Working exposure on ID's like VS Code and Notepad++</li>
-        <li  class="liclass">Good working experience under Agile methodologies environment</li>
-        <li  class="liclass">
+        <li  class="lisummary">Working exposure on ID's like VS Code and Notepad++</li>
+        <li  class="lisummary">Good working experience under Agile methodologies environment</li>
+        <li  class="lisummary">
           Experience in using Chrome Developer Tool for debugging and
           Troubleshooting the code
         </li>
-        <li  class="liclass">Knowledge of NodeJS</li>
-        <li>Ability to work with people at all levels in the program</li>
+        <li  class="lisummary">Knowledge of NodeJS</li>
+        <li class="lisummary">Ability to work with people at all levels in the program</li>
       </ul>
       </section>
       <hr />
@@ -221,7 +138,7 @@
           of academic activities like score and attendance
         </p>
         <hr />
-        <p><strong>Role and Responsibilities</strong></p>
+        <p id="rolepara"><strong>Role and Responsibilities</strong></p>
         <ol id="role" class="role-resp">
           <li>
             Designed and Implemented the user interface using HTML5 and CSS3
@@ -277,21 +194,21 @@
         </table>
       </section>
       <hr />
-    </section>
+   
     <!-- Footer Section -->
     <footer>
-      <section>
+      <section id="footersection">
         <a  href="https://www.instagram.com/"  target="_blank"  class="footer-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a class="footer-icon" href="https://www.linkedin.com/in/vishnu-bhangale-8738a859/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         <a class="footer-icon" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
       </section>
       <section>
-        <br />
         <section id="copyright">
           <!-- Copy write section -->
           Copyright &copy;2024vishnubhangale, Inc. All rights reserved.
         </section>
       </section>
+    </section>
     </footer>
   </body>
 </html>
